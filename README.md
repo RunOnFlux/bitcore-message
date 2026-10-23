@@ -42,6 +42,11 @@ npm test
 `npm test` runs every file under `test/` in its own mocha process and checks
 each outcome against `test/inherited-failures.json`, the inherited tests that
 fail at runonflux/bitcore-message ec2fb0a with bitcore-lib 8f5453f.
+`test/differential.js` checks this package against bitcore-message ec2fb0a
+with bitcore-lib 8f5453f, installed as the devDependency
+`bitcore-message-ec2fb0a`: magic hashes, signatures byte for byte with the
+random nonce fixed, cross verification, and rejection of wrong addresses and
+malformed signatures.
 
 ## License
 
