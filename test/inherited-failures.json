@@ -1,0 +1,11 @@
+{
+  "loadErrors": [],
+  "failures": {
+    "test/message.js": [
+      "Message can verify a message with address and generated signature string",
+      "Message will not verify with address mismatch",
+      "Message can chain methods",
+      "Message accepts Address for verification"
+    ]
+  }
+}

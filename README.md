@@ -31,6 +31,17 @@ var signature = 'H/DIn8uA1scAuKLlCx+/9LnAcJtwQQ0PmcPrJUq90aboLv3fH5fFvY+vmbfOSFE
 var verified = Message('hello, world').verify(address, signature);
 ```
 
+## Tests
+
+Requires Node.js 24 or later.
+
+```sh
+npm test
+```
+
+`npm test` runs every file under `test/` in its own mocha process and checks
+each outcome against `test/inherited-failures.json`, the inherited tests that
+fail at runonflux/bitcore-message ec2fb0a with bitcore-lib 8f5453f.
 
 ## License
 

@@ -3,11 +3,11 @@
   "version": "1.0.4",
   "description": "Flux Messages for Bitcore",
   "main": "index.js",
+  "engines": {
+    "node": ">=24"
+  },
   "scripts": {
-    "lint": "gulp lint",
-    "test": "gulp test:node",
-    "coverage": "gulp coverage",
-    "build": "gulp"
+    "test": "node scripts/test.js"
   },
   "keywords": [
     "flux",
@@ -22,13 +22,12 @@
     "url": "https://github.com/runonflux/bitcore-message.git"
   },
   "dependencies": {
-    "bitcore-lib": "https://github.com/runonflux/bitcore-lib#master"
+    "bitcore-lib": "git+https://github.com/runonflux/bitcore-lib.git#8f5453fdcee462e30532f9f93884ebe6aff71ef9"
   },
   "devDependencies": {
-    "bitcore-build": "https://github.com/runonflux/bitcore-build#master",
-    "brfs": "^1.3.0",
-    "chai": "~1.10.0",
-    "gulp": "^3.8.10"
+    "chai": "^6.3.0",
+    "mocha": "^12.0.3",
+    "sinon": "^22.1.0"
   },
   "license": "MIT"
 }
