@@ -1,23 +1,21 @@
 # Flux Message Verification and Signing for Bitcore
 
 
-bitcore-message-hush adds support for verifying and signing hush messages in [Node.js](http://nodejs.org/) and web browsers.
+bitcore-message adds support for verifying and signing Flux messages in [Node.js](https://nodejs.org/) 24 or newer.
 
 See [the main bitcore repo](https://github.com/bitpay/bitcore) for more information.
 
 ## Getting Started
 
 ```sh
-git clone https://github.com/runonflux/bitcore-message.git
-cd bitcore-message
-npm install --save
+npm install @runonflux/bitcore-message
 ```
 
 To sign a message:
 
 ```javascript
-var bitcore = require('bitcore-lib');
-var Message = require('bitcore-message');
+var bitcore = require('@runonflux/bitcore-lib');
+var Message = require('@runonflux/bitcore-message');
 
 var privateKey = bitcore.PrivateKey.fromWIF('cPBn5A4ikZvBTQ8D7NnvHZYCAxzDZ5Z2TSGW2LkyPiLxqYaJPBW4');
 var signature = Message('hello, world').sign(privateKey);

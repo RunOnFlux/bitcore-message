@@ -1,8 +1,12 @@
 {
-  "name": "bitcore-message",
-  "version": "1.0.4",
+  "name": "@runonflux/bitcore-message",
+  "version": "2.0.0",
   "description": "Flux Messages for Bitcore",
   "main": "index.js",
+  "files": [
+    "index.js",
+    "lib"
+  ],
   "engines": {
     "node": ">=24"
   },
@@ -22,7 +26,7 @@
     "url": "https://github.com/runonflux/bitcore-message.git"
   },
   "dependencies": {
-    "bitcore-lib": "git+https://github.com/runonflux/bitcore-lib.git#8f5453fdcee462e30532f9f93884ebe6aff71ef9"
+    "@runonflux/bitcore-lib": "^0.16.0"
   },
   "devDependencies": {
     "bitcore-message-ec2fb0a": "git+https://github.com/runonflux/bitcore-message.git#ec2fb0ab303c51b1c2654c35fdd1f807b11bf7e8",
@@ -35,5 +39,8 @@
     "bitcore-message-ec2fb0a": {
       "bitcore-lib": "git+https://github.com/runonflux/bitcore-lib.git#8f5453fdcee462e30532f9f93884ebe6aff71ef9"
     }
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

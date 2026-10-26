@@ -15,7 +15,7 @@ var path = require('path');
 var expect = require('chai').expect;
 var sinon = require('sinon');
 
-var NEW = { Message: require('..'), bitcore: require('bitcore-lib') };
+var NEW = { Message: require('..'), bitcore: require('@runonflux/bitcore-lib') };
 var OLD = {
   Message: require('bitcore-message-ec2fb0a'),
   bitcore: require(require.resolve('bitcore-lib', {
