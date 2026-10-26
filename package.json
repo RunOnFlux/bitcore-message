@@ -29,7 +29,7 @@
     "@runonflux/bitcore-lib": "^0.16.0"
   },
   "devDependencies": {
-    "bitcore-message-ec2fb0a": "git+https://github.com/runonflux/bitcore-message.git#ec2fb0ab303c51b1c2654c35fdd1f807b11bf7e8",
+    "bitcore-message-ec2fb0a": "file:test/fixtures/bitcore-message-ec2fb0a.tgz",
     "chai": "^6.3.0",
     "mocha": "^12.0.3",
     "sinon": "^22.1.0"
@@ -37,7 +37,7 @@
   "license": "MIT",
   "overrides": {
     "bitcore-message-ec2fb0a": {
-      "bitcore-lib": "git+https://github.com/runonflux/bitcore-lib.git#8f5453fdcee462e30532f9f93884ebe6aff71ef9"
+      "bitcore-lib": "file:test/fixtures/bitcore-lib-8f5453f.tgz"
     }
   },
   "publishConfig": {

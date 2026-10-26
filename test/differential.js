@@ -3,7 +3,8 @@
 /**
  * Differential test against runonflux/bitcore-message ec2fb0a with
  * bitcore-lib 8f5453f, installed as the devDependency
- * `bitcore-message-ec2fb0a`.
+ * `bitcore-message-ec2fb0a`. Both are in test/fixtures: index.js, lib,
+ * package.json and LICENSE at those commits.
  *
  * Every check runs the same operation through both and requires identical
  * output: magic hashes, compact signatures byte for byte (with the random
