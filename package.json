@@ -1,13 +1,17 @@
 {
-  "name": "bitcore-message",
-  "version": "1.0.4",
+  "name": "@runonflux/bitcore-message",
+  "version": "2.0.0",
   "description": "Flux Messages for Bitcore",
   "main": "index.js",
+  "files": [
+    "index.js",
+    "lib"
+  ],
+  "engines": {
+    "node": ">=24"
+  },
   "scripts": {
-    "lint": "gulp lint",
-    "test": "gulp test:node",
-    "coverage": "gulp coverage",
-    "build": "gulp"
+    "test": "node scripts/test.js"
   },
   "keywords": [
     "flux",
@@ -19,16 +23,24 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/runonflux/bitcore-message.git"
+    "url": "https://github.com/RunOnFlux/bitcore-message.git"
   },
   "dependencies": {
-    "bitcore-lib": "https://github.com/runonflux/bitcore-lib#master"
+    "@runonflux/bitcore-lib": "^0.16.0"
   },
   "devDependencies": {
-    "bitcore-build": "https://github.com/runonflux/bitcore-build#master",
-    "brfs": "^1.3.0",
-    "chai": "~1.10.0",
-    "gulp": "^3.8.10"
+    "bitcore-message-ec2fb0a": "file:test/fixtures/bitcore-message-ec2fb0a.tgz",
+    "chai": "^6.3.0",
+    "mocha": "^12.0.3",
+    "sinon": "^22.1.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "overrides": {
+    "bitcore-message-ec2fb0a": {
+      "bitcore-lib": "file:test/fixtures/bitcore-lib-8f5453f.tgz"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  }
 }
